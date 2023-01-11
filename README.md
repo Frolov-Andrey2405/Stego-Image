@@ -10,7 +10,7 @@ The `hide_msg_png` method takes in three parameters: the `img` file name, the `m
 
 The `reveal_msg_png` method takes in one parameter `secret_img` the name of the secret image file. It uses the `lsb.reveal()` method of the `stegano` library to reveal the message hidden within the image.
 
-The hide_msg_jpg and reveal_msg_jpg methods work in a similar way, but they use the exifHeader module of the stegano library to hide and reveal messages in JPG images.
+The `hide_msg_jpg` and `reveal_msg_jpg` methods work in a similar way, but they use the `exifHeader` module of the `stegano` library to hide and reveal messages in JPG images.
 
 In the `if __name__ == '__main__':` block, the script creates an instance of the `ImageSteganography` class, sets some image and message constants, and then uses the class's methods to hide and reveal messages in PNG and JPG images. The result of each reveal method is printed to the console. If an error occurs during the execution of the script, an error message will be printed.
 
